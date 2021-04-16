@@ -3,7 +3,6 @@
 //  SpaceXChallenge
 //
 //  Created by Alexander Mueller on 2020-12-02.
-//  Copyright © 2020 Perpetua Labs, Inc. All rights reserved.
 //
 
 import UIKit
@@ -41,14 +40,6 @@ class LaunchTableViewCell: UITableViewCell {
         }
     }
     
-    var patchImage: UIImage? = nil {
-        didSet {
-            if patchImage != nil {
-                patchImageView.image = patchImage
-            }
-        }
-    }
-    
     var launchStatus: LaunchStatus = .upcoming {
         didSet {
             statusLabel.text = launchStatus.rawValue
@@ -56,7 +47,7 @@ class LaunchTableViewCell: UITableViewCell {
         }
     }
     
-    private let patchImageView = UIImageView()
+    let patchImageView = UIImageView()
     private let nameLabel = UILabel()
     private let dateLabel = UILabel()
     private let statusLabel = UILabel()
@@ -74,9 +65,7 @@ class LaunchTableViewCell: UITableViewCell {
         
         // Patch Image View
         
-        patchImageView.image = UIImage(named: "launch_placeholder")
         patchImageView.frame = CGRect(x: padding, y: padding, width: imageHeight, height: imageHeight)
-        nameLabel.translatesAutoresizingMaskIntoConstraints = false
         
         contentView.addSubview(patchImageView)
         

@@ -3,7 +3,6 @@
 //  SpaceXChallenge
 //
 //  Created by Alexander Mueller on 2020-12-02.
-//  Copyright © 2020 Perpetua Labs, Inc. All rights reserved.
 //
 
 import Foundation

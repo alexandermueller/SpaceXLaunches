@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84717EC3262790A600901848 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84717EC2262790A600901848 /* Helpers.swift */; };
+		84717EE32627B93900901848 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 84717EE22627B93900901848 /* Nuke */; };
 		A86321A6242C2583009CEF1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86321A5242C2583009CEF1E /* AppDelegate.swift */; };
 		A86321A8242C2583009CEF1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86321A7242C2583009CEF1E /* SceneDelegate.swift */; };
 		A86321AA242C2583009CEF1E /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86321A9242C2583009CEF1E /* LaunchesViewController.swift */; };
@@ -33,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84717EC2262790A600901848 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		A86321A2242C2583009CEF1E /* SpaceXChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86321A5242C2583009CEF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A86321A7242C2583009CEF1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE368FC25781B470045187F /* RxSwift in Frameworks */,
+				84717EE32627B93900901848 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84717EC12627908A00901848 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5329F2578E70700F83B19 /* Data Types */,
+				84717EC2262790A600901848 /* Helpers.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		A8632199242C2583009CEF1E = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +108,7 @@
 		A86321A4242C2583009CEF1E /* SpaceXChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				FAF5329F2578E70700F83B19 /* Data Types */,
+				84717EC12627908A00901848 /* Utility */,
 				A86321A5242C2583009CEF1E /* AppDelegate.swift */,
 				A86321AE242C2585009CEF1E /* Assets.xcassets */,
 				A86321B3242C2585009CEF1E /* Info.plist */,
@@ -146,6 +159,7 @@
 			name = SpaceXChallenge;
 			packageProductDependencies = (
 				FAE368FB25781B470045187F /* RxSwift */,
+				84717EE22627B93900901848 /* Nuke */,
 			);
 			productName = SpaceXChallenge;
 			productReference = A86321A2242C2583009CEF1E /* SpaceXChallenge.app */;
@@ -176,7 +190,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Perpetua Labs, Inc.";
 				TargetAttributes = {
 					A86321A1242C2583009CEF1E = {
@@ -199,6 +213,7 @@
 			mainGroup = A8632199242C2583009CEF1E;
 			packageReferences = (
 				FAE368FA25781B470045187F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				84717EE12627B93900901848 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = A86321A3242C2583009CEF1E /* Products */;
 			projectDirPath = "";
@@ -240,6 +255,7 @@
 				A86321A6242C2583009CEF1E /* AppDelegate.swift in Sources */,
 				FAE36908257844F20045187F /* RocketData.swift in Sources */,
 				FAE369162578E4C60045187F /* RocketDetailsViewController.swift in Sources */,
+				84717EC3262790A600901848 /* Helpers.swift in Sources */,
 				FAE368FE25781BA70045187F /* LaunchData.swift in Sources */,
 				FAE3690D25786BDE0045187F /* LaunchTableViewCell.swift in Sources */,
 				A86321A8242C2583009CEF1E /* SceneDelegate.swift in Sources */,
@@ -310,6 +326,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -370,6 +387,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -511,6 +529,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		84717EE12627B93900901848 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.5.0;
+			};
+		};
 		FAE368FA25781B470045187F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -522,6 +548,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		84717EE22627B93900901848 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84717EE12627B93900901848 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
 		FAE368FB25781B470045187F /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FAE368FA25781B470045187F /* XCRemoteSwiftPackageReference "RxSwift" */;
